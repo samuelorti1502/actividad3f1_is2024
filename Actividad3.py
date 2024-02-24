@@ -120,3 +120,50 @@ while True:
         persona1.modificar_informacion()
     else:
         print("Opción inválida.")
+
+
+
+class Cliente:
+    def __init__(self, nombres, apellidos, direccion, telefono, fecha_nacimiento, nit):
+        self.nombres = nombres
+        self.apellidos = apellidos
+        self.direccion = direccion
+        self.telefono = telefono
+        self.fecha_nacimiento = fecha_nacimiento
+        self.nit = nit
+
+    def mostrar_informacion(self):
+        print(f"Nombres: {self.nombres}")
+        print(f"Apellidos: {self.apellidos}")
+        print(f"Dirección: {self.direccion}")
+        print(f"Teléfono: {self.telefono}")
+        print(f"Fecha de Nacimiento: {self.fecha_nacimiento}")
+        print(f"NIT: {self.nit}")
+
+    def actualizar_informacion(self, nombres=None, apellidos=None, direccion=None, telefono=None, fecha_nacimiento=None, nit=None):
+        if nombres:
+            self.nombres = nombres
+        if apellidos:
+            self.apellidos = apellidos
+        if direccion:
+            self.direccion = direccion
+        if telefono:
+            self.telefono = telefono
+        if fecha_nacimiento:
+            self.fecha_nacimiento = fecha_nacimiento
+        if nit:
+            self.nit = nit
+
+# Ejemplo de uso:
+cliente1 = Cliente("Juan", "Perez", "Calle A, No. 123", "123456789", "01/01/1990", "123456789X")
+
+# Mostrar información
+print("Información inicial:")
+cliente1.mostrar_informacion()
+
+# Actualizar información
+cliente1.actualizar_informacion(apellidos="López", telefono="987654321", nit="987654321Y")
+
+print("\nInformación actualizada:")
+cliente1.mostrar_informacion()
+
