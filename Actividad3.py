@@ -165,3 +165,5 @@ cliente1.actualizar_informacion(apellidos="López", telefono="987654321", nit="9
 print("\nInformación actualizada:")
 cliente1.mostrar_informacion()
 
+
+//datos de cliente
