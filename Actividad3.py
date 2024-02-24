@@ -120,3 +120,6 @@ while True:
         persona1.modificar_informacion()
     else:
         print("Opción inválida.")
+
+
+// todo bien 
