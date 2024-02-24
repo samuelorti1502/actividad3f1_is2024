@@ -121,8 +121,6 @@ while True:
     else:
         print("Opción inválida.")
 
-
-
 class Cliente:
     def __init__(self, nombres, apellidos, direccion, telefono, fecha_nacimiento, nit):
         self.nombres = nombres
