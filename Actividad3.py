@@ -167,3 +167,48 @@ cliente1.mostrar_informacion()
 
 
 //datos de cliente
+
+
+
+
+
+
+
+
+
+
+
+
+
+#empleado
+
+
+class Empleado:
+    def __init__(self, codigo, nombre_empleado, puesto):
+        self.codigo = codigo
+        self.nombre_empleado = nombre_empleado
+        self.puesto = puesto
+
+    def mostrar_informacion_empleado(self):
+        print(f"Código: {self.codigo}")
+        print(f"Nombre del Empleado: {self.nombre_empleado}")
+        print(f"Puesto: {self.puesto}")
+
+    def actualizar_informacion_empleado(self, nombre_empleado=None, puesto=None):
+        if nombre_empleado:
+            self.nombre_empleado = nombre_empleado
+        if puesto:
+            self.puesto = puesto
+
+# Ejemplo de uso:
+empleado1 = Empleado("E001", "Carlos Pérez", "Desarrollador")
+
+# Mostrar información del empleado
+print("Información del empleado:")
+empleado1.mostrar_informacion_empleado()
+
+# Actualizar información del empleado
+empleado1.actualizar_informacion_empleado(puesto="Analista de Datos")
+
+print("\nInformación actualizada del empleado:")
+empleado1.mostrar_informacion_empleado()
